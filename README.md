@@ -1115,7 +1115,9 @@ aws_vpc.vpc
 
 <img width="737" alt="Screenshot_4" src="https://github.com/syamsankarlv/Terraform-AWS_ALB-ASG/assets/37361340/e7289793-c883-403f-a467-d0e19c73015c">
 
+## Conclusion
 
+Here is a simple guide on how to use Terraform to build an AWS Application Load Balancer (ALB). This includes the architecture and demonstrates how the user can use Terraform to manage AWS resources, including the VPC, ALB, ASG, EC2 instances, etc and GitHub rep integration.
 
 ### ⚙️ Connect with Me
 
