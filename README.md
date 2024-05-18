@@ -67,8 +67,6 @@ data "aws_availability_zones" "az" {
 ```
 
 # Target Groups
-
-### Target Group One
 ```sh
 #-------------------------------------#
 #         Target Group one            #
@@ -199,7 +197,6 @@ resource "aws_lb_listener_rule" "rule-one" {
 This block defines a listener rule that forwards requests with the host header `first-host-name.example.com` to `tg-one`.
 
 # Launch Configurations
-## Launch Configuration One
 ```sh
 #==========================================#
 #          Launch Configurations           #
@@ -304,9 +301,10 @@ This block creates a security group `sgweb` allowing inbound traffic on ports `8
 -  The user can modify only the `variables.tf` file to meet specific requirements without altering the main Terraform scripts directly. This approach facilitates updates to the entire infrastructure and the `userdata` according to the requirements. Consider the example values given below.
 
 ```sh
-#################################################
-# Provider Details & Project Name
-#################################################
+#======================================#
+#    Provider Details & Project Name   #
+#======================================#
+
 
 variable "aws_access_key" {
   type        = string
@@ -332,9 +330,9 @@ variable "project" {
 
 }
 
-#################################################
-# VPC Requiremnet
-#################################################
+#======================================#
+#          VPC Requiremnet             #
+#======================================#
 
 variable "vpc_cidr" {
   default = "172.16.0.0/16"
@@ -347,9 +345,9 @@ variable "aws_route_table" {
 
 }
 
-#################################################
-# EC2 Requirement 
-#################################################
+#======================================#
+#          EC2 Requirement             #
+#======================================#
 
 variable "image_id" {
   default = "ami-04e5276ebb8451442"
